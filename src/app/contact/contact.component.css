@@ -1,0 +1,55 @@
+@media screen and (min-width: 600px) {
+    .panel > div {
+        @apply gap-x-4;
+        grid-template-columns: fit-content(350px) auto;
+    }
+    .panel > div > div:first-of-type {
+        width: min(50vw, 450px)
+    }   
+    .panel > div {
+        @apply w-fit
+    }
+}
+@media screen and (max-width: 600px) {
+    .panel > div > div{
+        @apply mx-auto;
+        width: min(100%, 450px)
+    }
+    .panel .grid > div:last-of-type > p:first-of-type{
+        @apply pt-6 pb-2
+    }
+    .panel .item-title {
+        @apply text-center
+    }
+}
+.contact-details > p:nth-last-of-type(even) {
+    @apply text-red-500 text-lg;
+}
+.contact-details > p:nth-last-of-type(odd):not(:first-of-type) {
+    @apply text-red-500 text-base mb-4;
+    color: #d1d0d0
+}
+.contact-form textarea {
+    @apply h-40
+}
+.contact-form textarea,
+.contact-form input {
+    @apply px-2 py-1 rounded-md my-1;
+    color: #e0e0e0;
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(80,80,80,1) 100%);
+}
+.contact-form textarea::placeholder,
+.contact-form input::placeholder {
+    color: #848484;
+}
+.contact-details i {
+    @apply text-5xl
+}
+.contact-details .pi-facebook {
+    color: #0866ff;
+}
+.contact-details .pi-linkedin {
+    color: #0a66c2;
+}
+

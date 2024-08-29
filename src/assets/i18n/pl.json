@@ -1,0 +1,102 @@
+{
+    "navbar": {
+        "home": "Home",
+        "resume": "CV",
+        "about": "O mnie",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt"
+    },
+    "banner": {
+        "hello": "Dzień dobry! Nazywam się <span class=\"red-bold\">JAKUB PRUSZYDŁO</span>",
+        "resume": "Poniżej znajdziesz moje <span class=\"red-bold\">CV</span>"
+    },
+    "cv": {
+        "educationTitle": "Edukacja",
+        "experienceTitle": "Doświadczenie", 
+        "education": {
+            "date": "04/2016 - 02/2020",
+            "university": "Politechnika Śląska | Gliwice",
+            "degree": "Tytuł inżyniera: Programowanie aplikacji mobilnych",
+            "description": "Studia stacjonarne na kierunku Informatyka"
+        },
+        "experience": [
+            {
+                "date": "03/2020 - 07/2024",
+                "position": "Software Engineer",
+                "name": "ALSTOM | Katowice",
+                "description": "- Tworzenie i utrzymywanie wewnętrznych narzędzi testowych dla projektów kolejowych z użyciem Python, SQL, Docker, Django | .Net Framework, WinForms<br />- Utrzymywanie kodu z GIT CI/CD z wykorzystaniem Black Formatting, Pylint, Testów Jednostkowe<br />- Udział w zespole SCRUM"
+            }, {
+                "date": "04/2016 - 02/2020",
+                "position": "Software Engineer",
+                "name": "NCR Corporation | Katowice",
+                "description": "- Tworzenie nowych funkcjonalności, utrzymywanie aplikacji bankomatowych w .Net Framework, Visual Studio<br>- Tworzenie podstawowego front-endu aplikacji ATM za pomocą HTML, CSS, JavaScript"
+            }
+        ]
+    },
+    "about": {
+        "title": "O <span class=\"red-bold\">Mnie</span>",
+        "about": "Jestem programistą z ponad 8-letnim doświadczeniem, specjalizującym się w językach C# oraz Python. Moja kariera rozpoczęła się od tworzenia aplikacji bankomatowych, gdzie zdobyłem solidne podstawy w .Net oraz technologiach frontendowych takich jak JavaScript, HTML i CSS. W kolejnych latach, zdecydowałem się rozwijać w języku Python oraz architekturze mikroserwisów. W ostatnim czasie rozwijałem swoje umiejętności, pracując nad własnymi projektami z wykorzystaniem Angular, ASP.Net Core oraz MySQL. Świetnie czuję się w pracy zarówno zespołowej, jak i indywidualnej. Jestem otwarty na zdobywanie nowych umiejętności i ciągłe doskonalenie swoich kompetencji.",
+        "skillsTitle": "Moje umiejętności",
+        "skills": [
+            ".Net",
+            "ASP.Net Core",
+            ".Net Framework",
+            "C#",
+            "Angular 18",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Python",
+            "RestAPI",
+            "MySQl",
+            "Docker",
+            "SCRUM",
+            "Linux",
+            "Windows"
+        ]
+    },
+    "portfolio": {
+        "title": "Realizacje",
+        "linkName": "Strona główna projektu",
+        "items": [
+            {
+                "name": "Skracacz linków",
+                "link": "https://myshort.pl",
+                "images": ["realisations/myshort/1.png", "realisations/myshort/2.png"],
+                "description":
+                    "Aplikacja do skracania linków, która łączy nowoczesne technologie frontendowe i backendowe. Wykorzystując Angular, zbudowałem interfejs użytkownika, który jest nie tylko responsywny, ale również estetyczny i łatwy w obsłudze. Na backendzie zastosowałem ASP.Net Core oraz Entity Framework Core, co umożliwia solidną obsługę obsługę komunikacji z frontendem oraz bazą danych MySQL, która gwarantuje niezawodne przechowywanie i zarządzanie danymi. Frontent i backend komunikują dzięki RestApi oraz zapytaniom HTTP. Ten projekt pozwolił mi połączyć moje umiejętności w zakresie tworzenia pełnych aplikacji webowych, od koncepcji po finalny produkt."
+            },
+            {
+                "name": "Strona internetowa na zlecenie firmy GK-System",
+                "link": "http://gk-system.myshort.pl",
+                "images": ["realisations/gk-system/1.png", "realisations/gk-system/2.png", "realisations/gk-system/3.png"],
+                "description":
+                    "Na zlecenie firmy budowlanej GK-System stworzyłem stronę internetową pełniącą funkcję wizytówki, która prezentuje ofertę i osiągnięcia firmy. Projekt ten oparty został na technologii ASP.Net Core z wykorzystaniem Entity Framework Core do zarządzania danymi oraz MySQL jako bazy danych. Frontend zbudowałem w Angularze, co pozwoliło mi na stworzenie nowoczesnego i responsywnego interfejsu. Komunikacja między frontendem a backendem odbywała się za pomocą RestApi oraz zapytań HTTP, co zapewniło płynne działanie aplikacji. Ten projekt znacząco rozwinął moje umiejętności w zakresie tworzenia interfejsów użytkownika oraz pełnego cyklu tworzenia aplikacji webowych."
+            },
+            {
+                "name": "System CMS na zlecenie firmy GK-System",
+                "link": "",
+                "images": [
+                    "realisations/gk-system-cms/1.png",
+                    "realisations/gk-system-cms/2.png",
+                    "realisations/gk-system-cms/3.png",
+                    "realisations/gk-system-cms/4.png",
+                    "realisations/gk-system-cms/5.png"
+                ],
+                "description":
+                    "W ramach dalszej współpracy z firmą GK-System stworzyłem system CMS, który umożliwia łatwe zarządzanie treścią na stronie internetowej. Dzięki zastosowaniu ASP.Net Core oraz Entity Framework Core, system ten jest nie tylko wydajny, ale również łatwy do rozbudowy. MySQL pełni rolę bazy danych, zapewniając stabilne przechowywanie i szybki dostęp do informacji. Frontend zrealizowany w Angularze, z komunikacją opartą na RestApi i zapytaniach HTTP, umożliwia intuicyjne zarządzanie zawartością strony. Projekt ten umożliwił firmie GK-System samodzielne aktualizowanie treści, a mnie pozwolił na dalsze doskonalenie umiejętności w zakresie tworzenia złożonych aplikacji webowych."
+            }
+        ]
+    },
+    "contact": {
+        "textme": "Napisz do mnie",
+        "namePh": "Twoje imię",
+        "phonePh": "Twój telefon",
+        "mailPh": "Twój email",
+        "textPh": "Wpisz wiadomość",
+        "button": "Wyślij wiadomość",
+        "contactData": "Moje dane kontaktowe",
+        "phone": "Telefon",
+        "localisation": "Moje lokalizacja"
+    }
+}

@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "primeicons/primeicons.css";
+
+html, body {
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.panel {
+    @apply px-3 pb-12;
+    background-color: #363636;
+}
+.panel-item {
+    color: #969696;
+    @apply rounded-md bg-gray-600 px-4 py-2 mb-4;
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,1) 0%, #505050 100%);
+}
+.item-title {
+    @apply mb-4 font-semibold;
+    color: #969696;
+}
+.panel-title {
+    @apply text-4xl w-full text-center py-4;
+    color: #969696;
+}
+.red-bold {
+    @apply text-red-600 font-extrabold text-nowrap
+}
+.panel .description {
+    color: #dbdbdb
+}
+
+.gradient {
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(80,80,80,1) 100%);
+}
+.header {
+    @apply font-bold text-white text-nowrap;
+    font-size: min(3.5vw, 16px);
+}
+.title {
+    @apply text-red-500 font-semibold;
+    font-size: min(22px, 5vw);
+}
+
+
+.button {
+    @apply px-2 py-1 rounded-md z-10;
+    color: #cac9c9;
+    background: rgb(237,0,0);
+    background: linear-gradient(180deg, rgba(237,0,0,1) 0%, rgba(190,0,0,1) 100%);
+    animation: buttonOut 0.4s forwards;
+}
+
+.button:hover {
+    animation: buttonOver 0.4s forwards
+}
+
+@keyframes buttonOver {
+    0% {scale: 1}
+    100% { scale: 1.05}
+}
+@keyframes buttonOut {
+    0% {scale: 1.05}
+    100% { scale: 1}
+}
+
+.navbar .nav-items > button:hover {
+    animation: navItemMouseover 0.3s forwards
+  }
+  .navbar .nav-items > button {
+    animation: navItemMouseout 0.6s forwards
+  }
+  .hr-visible {
+    animation: hrItemFadeIn 0.3s forwards
+  }
+  .hr-hidden {
+    animation: hrItemFadeOut 0.6s forwards
+  }
+  @keyframes hrItemFadeIn {
+    0%   {width: 0; opacity: 0;}
+    100% {width: 100%; opacity: 1;}
+  }
+  @keyframes hrItemFadeOut {
+    0%   {width: 100%; opacity: 1;}
+    100% {width: 0; opacity: 0;}
+  }
+  
+  @keyframes navItemMouseover {
+    0%   {color: #cecece;}
+    100% {color: red; }
+  }
+  @keyframes navItemMouseout {
+    0%   {color: red;}
+    100% {color: #cecece;}
+  }

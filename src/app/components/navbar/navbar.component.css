@@ -1,0 +1,79 @@
+@media screen and (min-width: 710px) {
+  .menu-button {
+    display: none;
+  }
+  .nav-items {
+    @apply absolute h-full top-0 left-1/2 -translate-x-1/2 flex flex-row gap-4 font-semibold text-2xl
+  }
+  
+}
+@media screen and (max-width: 710px) {
+  .nav-items {
+    @apply relative pt-14 w-1/2 text-2xl grid grid-rows-5 z-40;
+    height: 60vh;
+
+  }
+  .nav-items > button:first-of-type {
+    @apply border-t-2
+  }
+  .nav-items > button {
+    @apply bg-neutral-600 border-b-2 border-neutral-500
+  }
+  .nav-items button > hr {
+    display: none;
+  }
+  .nav-visible {
+    animation: navFromLeft 0.3s forwards
+  }
+  .nav-hidden {
+    animation: navToLeft 0.3s forwards
+  }
+  @keyframes navFromLeft {
+    0%   {left: -50%;}
+    100% {left: 0;}
+  }
+  @keyframes navToLeft {
+    0%   {left: 0;}
+    100% {left: -50%;}
+  }
+}
+
+.navbar .flag-items span:hover    {
+  animation: flagMouseover 0.3s forwards
+}
+.navbar .flag-items span {
+  animation: flagMouseout 0.3s forwards
+}
+
+.nav-on-scroll {
+  @apply fixed  ;
+  animation: navFadeIn 0.6s forwards
+}
+.menu-button-hidden {
+  animation: menuButtonFadeOut 0.6s forwards
+}
+.menu-button-visible {
+  animation: menuButtonFadeIn 0.6s forwards
+}
+@keyframes menuButtonFadeOut {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes menuButtonFadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes navFadeIn {
+  0%   {top: -30px}
+  100% {top: 0;}
+}
+
+
+@keyframes flagMouseover {
+  0%   {scale: 1;}
+  100% {scale: 1.2; }
+}
+@keyframes flagMouseout {
+  0%   {scale: 1.2;}
+  100% {scale: 1; }
+}

@@ -1,0 +1,12 @@
+.skills div > p {
+    @apply text-base px-2 py-0.5 rounded text-nowrap;
+    color: #c8c7c7;
+    box-shadow: 0 0 10px #919191 inset;
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,1) 0%, #505050 100%);
+}
+
+.skills > div {
+    @apply flex flex-wrap gap-2 justify-center mx-auto;
+    max-width: 690px
+}

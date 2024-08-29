@@ -1,0 +1,16 @@
+<div class="flex relative top-0 h-screen pt-14 z-10">
+    <img src="../../../assets/bg.jpg" class="absolute w-full h-full top-0 opacity-50" />
+
+    <div id="banner-items">
+        <div class="image">
+            <img
+                src="../../../assets/profilowe.png"
+                class="z-30 relative left-1/2 top-full -translate-y-full -translate-x-1/2"
+            />
+        </div>
+        <div class="text-center description z-50" *transloco="let t; prefix: 'banner'">
+            <p [innerHTML]="translations['hello']"></p>
+            <p [innerHTML]="translations['resume']"></p>
+        </div>
+    </div>
+</div>

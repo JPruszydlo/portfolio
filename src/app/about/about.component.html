@@ -1,0 +1,21 @@
+<div class="panel">
+    <div class="flex flex-row mx-auto" style="padding: 10px 10px 0 0; max-width: 690px">
+        <div class="">
+            <img
+                src="../../assets/profilowe2.png"
+                class="mr-4 -mb-2 -ml-1 gradient rounded-md"
+                style="width: auto; height: min(300px, 60vw); object-fit: cover; float: left"
+            />
+            <div class="description text-lg text-justify -mr-2">
+                <div class="text-left text-2xl font-bold -mt-1" [innerHTML]="about?.title"></div>
+                {{ about?.about }}
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <p class="item-title text-center text-xl pt-4">{{ about?.skillsTitle }}</p>
+        <div>
+            <p *ngFor="let skill of about?.skills">{{ skill }}</p>
+        </div>
+    </div>
+</div>

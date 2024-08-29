@@ -1,0 +1,29 @@
+<div #navbar class="navbar {{ navStyle }} top-0 left-0 w-screen text-center z-50" style="color: #cecece">
+    <button class="menu-button z-50 absolute left-8 h-full" (click)="toggleMenu()">
+        <i #menuOpen class="menu-button-visible pi pi-bars text-white text-4xl relative left-0 z-30"></i>
+        <i #menuClose class="menu-button-hidden pi pi-times text-white text-4xl absolute left-0 z-10"></i>
+    </button>
+    <div #navItems class="nav-items -left-1/2">
+        <button
+            #navButton
+            *ngFor="let button of buttons"
+            (mouseover)="toggleMouseOver(hrItem)"
+            (mouseout)="toggleMouseOut(hrItem)"
+            [id]="button.id"
+            class="text-nowrap"
+            (click)="navigate(navButton.id)"
+        >
+            {{ button.name }}
+            <p
+                #hrItem
+                [ngClass]="['border-red-500', 'mx-auto', 'hr-hidden']"
+                class="h-0"
+                style="border: 1px solid red"
+            ></p>
+        </button>
+    </div>
+    <div class="absolute h-full top-0 right-10 flex flex-row flag-items">
+        <button (click)="setLanguage('pl')"><span class="fi fi-pl text-3xl"></span></button>
+        <button (click)="setLanguage('en')"><span class="fi fi-gb text-3xl ml-4"></span></button>
+    </div>
+</div>

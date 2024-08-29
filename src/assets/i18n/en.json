@@ -1,0 +1,102 @@
+{
+    "navbar": {
+        "home": "Home",
+        "resume": "Resume",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "banner": {
+        "hello": "Hello! I\"m <span class=\"red-bold\">JAKUB PRUSZYDŁO</span>",
+        "resume": "See my <span class=\"red-bold\">RESUME</span> below"
+    },
+    "cv": {
+        "educationTitle": "Education",
+        "experienceTitle": "Experience", 
+        "education": {
+            "date": "10/2013 - 02/2017",
+            "university": "Silesian University of Technology | Gliwice",
+            "degree": "Engineering degree : Programming of mobile applications",
+            "description": "Full-time studies in Computer Science"
+        },
+        "experience": [
+            {
+                "date": "03/2020 - 07/2024",
+                "position": "Software Engineer",
+                "name": "ALSTOM | Katowice",
+                "description": " - Creating and maintenance of internal testing tools for railway projects using Python, SQL, Docker, Django | .Net Framework, WinForms<br /> - Code maintenance with GIT CI/CD whit black formatting, pylint tests, unittesting<br /> - Participating in SCRUM team"
+            }, {
+                "date": "04/2016 - 02/2020",
+                "position": "Software Engineer",
+                "name": "NCR Corporation | Katowice",
+                "description": "- Creating features, maintaining ATM applications in .Net Framework, Visual Studio<br />- Creating basic ATM app frontend with HTML, CSS, JavaScript"
+            }
+        ]
+    },
+    "about": {
+        "title": "About <span class=\"red-bold\">Me</span>",
+        "about": "I am a programmer with over 8 years of experience, specializing in C# and Python. My career began with developing ATM applications, where I gained a solid foundation in .Net and frontend technologies such as JavaScript, HTML, and CSS. In the following years, I decided to focus on Python and microservices architecture. Recently, I have been enhancing my skills by working on personal projects using Angular, ASP.Net Core, and MySQL. I thrive in both team and individual work environments. I am open to acquiring new skills and continuously improving my competencies.",
+        "skillsTitle": "My skills",
+        "skills": [
+            ".Net",
+            "ASP.Net Core",
+            ".Net Framework",
+            "C#",
+            "Angular 18",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Python",
+            "RestAPI",
+            "MySQl",
+            "Docker",
+            "SCRUM",
+            "Linux",
+            "Windows"
+        ]
+    }, 
+    "portfolio": {
+        "title": "Portfolio",
+        "linkName": "Project main page",
+        "items": [
+            {
+                "name": "URL Shortener",
+                "link": "https://myshort.pl",
+                "images": ["realisations/myshort/1.png", "realisations/myshort/2.png"],
+                "description":
+                    "URL Shortener web app that combines modern frontend and backend technologies. Using Angular, I built a user interface that is not only responsive, but also aesthetic and easy to use. On the backend, I used ASP.Net Core and Entity Framework Core, which allows for solid support for communication with the frontend and the MySQL database, which guarantees reliable data storage and management. The frontend and backend communicate thanks to RestApi and HTTP requests. This project allowed me to combine my skills in creating full web applications, from concept to final product."
+            },
+            {
+                "name": "website commissioned by GK-System",
+                "link": "http://gk-system.myshort.pl",
+                "images": ["realisations/gk-system/1.png", "realisations/gk-system/2.png", "realisations/gk-system/3.png"],
+                "description":
+                    "On behalf of the construction company GK-System, I created a website that serves as a business card, presenting the company's offer and achievements. This project was based on ASP.Net Core technology using Entity Framework Core for data management and MySQL as a database. I built the frontend in Angular, which allowed me to create a modern and responsive interface. Communication between the frontend and the backend was carried out using RestApi and HTTP requests, which ensured the smooth operation of the application. This project significantly developed my skills in creating user interfaces and the full cycle of creating web applications."
+            },
+            {
+                "name": "CMS system commissioned by GK-System",
+                "link": "",
+                "images": [
+                    "realisations/gk-system-cms/1.png",
+                    "realisations/gk-system-cms/2.png",
+                    "realisations/gk-system-cms/3.png",
+                    "realisations/gk-system-cms/4.png",
+                    "realisations/gk-system-cms/5.png"
+                ],
+                "description":
+                    "As part of further cooperation with GK-System, I created a CMS system that allows easy content management on the website. Thanks to the use of ASP.Net Core and Entity Framework Core, this system is not only efficient, but also easy to expand. MySQL acts as a database, providing stable storage and quick access to information. The frontend implemented in Angular, with communication based on RestApi and HTTP queries, allows intuitive management of the website content. This project allowed GK-System to update content independently, and allowed me to further improve my skills in creating complex web applications."
+            }
+        ]
+    },
+    "contact": {
+        "textme": "Get in touch",
+        "namePh": "Your name",
+        "phonePh": "Your phone",
+        "mailPh": "Your email",
+        "textPh": "Write message",
+        "button": "Send message",
+        "contactData": "My contact details",
+        "phone": "Phone number",
+        "localisation": "My localisation"
+    }
+}

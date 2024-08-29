@@ -1,0 +1,21 @@
+<div class="relative" (click)="onClick.emit()">
+    <img
+        *ngFor="let item of items; let idx = index"
+        class="rounded-t-lg top-0 {{
+            idx == 0 ? 'relative' : 'absolute'
+        }} block w-full h-full max-h-full object-cover {{ item.zIndex }} {{ item.class }}"
+        [src]="'../../assets/' + item.src"
+    />
+    <!-- <img
+        class="rounded-t-lg top-0 relative block w-full h-full max-h-full object-cover z-30"
+        src="../../assets/realisations/myshort/1.png"
+    />
+    <img
+        class="rounded-t-lg top-0 left-0 absolute block w-full h-full max-h-full object-cover z-10"
+        src="../../assets/realisations/myshort/2.png"
+    /> -->
+</div>
+
+<!-- <div *ngFor="let item of items" class="{{ item.class }} {{ item.zIndex }} absolute top-0 left-0 h-52">
+    <img [src]="'../../assets/' + item.src" class="max-h-full max-w-full" />
+</div> -->

@@ -1,0 +1,55 @@
+<div class="panel">
+    <p class="panel-title mb-5">{{ portfolio?.title }}</p>
+    <div class="items-grid grid mx-auto">
+        <div style="width: min(450px, 100%)" class="mx-auto" *ngFor="let item of portfolio?.items">
+            <app-carousel
+                [images]="item.images"
+                (onClick)="accordion.activeIndex = accordion.activeIndex == -1 ? 0 : -1"
+            />
+
+            <p class="text-white relative top-0">
+                <p-accordion [activeIndex]="-1" #accordion>
+                    <p-accordionTab
+                        [header]="item.name"
+                        [tabStyleClass]="'text-white font-semibold mt-1'"
+                        [contentStyleClass]="'-mt-2 description text-xs'"
+                        [contentStyle]="{
+                            background: 'linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(80,80,80,1) 100%)'
+                        }"
+                        [headerStyleClass]="'rounded-b-lg rounded-t-none py-2'"
+                        [headerStyle]="{
+                            background: 'linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(80,80,80,1) 100%)'
+                        }"
+                    >
+                        <div>
+                            <p *ngIf="item.link != ''" class="title pb-2 underline" style="font-size: 16px">
+                                <a [href]="item.link" target="_blank"
+                                    ><i class="pi pi-link mr-1 text-sm"></i>{{ portfolio?.linkName }}</a
+                                >
+                            </p>
+                            {{ item.description }}
+                        </div>
+                    </p-accordionTab>
+                </p-accordion>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="panel h-96">
+    <p class="panel-title">Moje realizacje</p>
+    <div class="mx-auto grid grid-cols-2" *ngFor="let item of items" style="width: 95%">
+        <div class="relative">
+            <app-carousel [images]="item.images" class="mx-auto" />
+        </div>
+
+        <div class="">
+            <p class="text-red-500 text-center">
+                <a [href]="item.link" target="_blank">{{ item.link }}</a>
+            </p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus perspiciatis, praesentium magni natus
+            deleniti, eveniet quidem accusantium facilis quis eos optio fuga, perferendis officia nostrum eligendi
+            pariatur doloremque quae inventore.
+        </div>
+    </div>
+</div> -->

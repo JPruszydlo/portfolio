@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+    .panel .items-flex-panel {
+        @apply flex-row
+    }
+}
+@media screen and (max-width: 600px) {
+    .panel .items-flex-panel {
+        @apply flex-col
+    }
+}
+
+
+.flex-wrapper > div{
+    background-color: #a7a7a7;
+}
+

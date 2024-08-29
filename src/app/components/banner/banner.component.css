@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+    #banner-items {
+        @apply grid items-center w-full;
+        grid-template-columns: 40% auto;
+        grid-auto-flow: row;
+    }
+    #banner-items .description > p {
+        @apply w-full ;
+    }
+    #banner-items .image {
+        @apply h-full
+    }
+    #banner-items .image > img {
+        @apply mx-auto;
+        max-width: 460px;
+    }
+
+    #banner-items .description p:first-of-type {
+        font-size: min(5vw, 50px);
+    }
+    #banner-items .description p:last-of-type {
+        @apply mt-6;
+        font-size: min(3vw, 40px);
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #banner-items {
+        @apply w-full overflow-hidden h-screen absolute top-0 pt-10;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: auto fit-content(0);
+    }
+    #banner-items .image {
+        order: 2
+    }
+    #banner-items .image > img {
+        /* height: min(895px, 100%); */
+        width: min(600px, 98%);
+    }
+    #banner-items .image {
+        @apply relative
+    }
+    #banner-items .description {
+        @apply flex flex-col place-self-center
+    }
+    #banner-items .description > p:first-of-type {
+        font-size: min(8vw, 50px);
+    }
+    #banner-items .description > p:last-of-type {
+        font-size: min(5vw, 40px);
+    }
+}

@@ -1,0 +1,22 @@
+<div class="panel pt-5">
+    <div class="items-flex-panel flex mx-auto gap-8 pt-4" style="max-width: 960px">
+        <div class="w-full">
+            <p class="item-title text-2xl">{{ cv?.educationTitle }}</p>
+            <div class="panel-item">
+                <p class="header"><i class="pi pi-calendar font-bold text-sm mr-1"></i>{{ cv?.education?.date }}</p>
+                <p class="title">{{ cv?.education?.university }}</p>
+                <p class="description">{{ cv?.education?.description }}</p>
+                <p class="footer">{{ cv?.education?.degree }}</p>
+            </div>
+        </div>
+        <div class="w-full">
+            <p class="item-title text-2xl">{{ cv?.experienceTitle }}</p>
+            <div class="panel-item" *ngFor="let item of cv?.experience">
+                <p class="header"><i class="pi pi-calendar font-bold text-sm mr-1"></i>{{ item.date }}</p>
+                <p class="title">{{ item.position }}</p>
+                <p class="description" [innerHTML]="item.description"></p>
+                <p class="footer"><i class="pi pi-building"></i>{{ item.name }}</p>
+            </div>
+        </div>
+    </div>
+</div>
