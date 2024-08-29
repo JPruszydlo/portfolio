@@ -1,14 +1,39 @@
 <div class="panel">
     <div class="grid mx-auto">
-        <div class="flex flex-col contact-form">
+        <div class="flex flex-col contact-form" [formGroup]="contactForm">
             <p class="item-title text-2xl font-bold">{{ contact?.textme }}</p>
-            <input type="text" [placeholder]="contact?.namePh" />
-            <input type="text" [placeholder]="contact?.phonePh" />
-            <input type="text" [placeholder]="contact?.mailPh" />
-            <textarea [placeholder]="contact?.textPh"></textarea>
-            <button class="button self-start mt-2 z-50">{{ contact?.button }}</button>
+            <input
+                (keyup.enter)="sendMessage()"
+                #formName
+                type="text"
+                [placeholder]="contact?.namePh"
+                formControlName="name"
+            />
+            <input
+                #formPhone
+                type="text"
+                [placeholder]="contact?.phonePh"
+                formControlName="phone"
+                (keypress)="numberOnly($event)"
+                (keyup.enter)="sendMessage()"
+            />
+            <input
+                #formEmail
+                type="text"
+                (keyup.enter)="sendMessage()"
+                [placeholder]="contact?.mailPh"
+                formControlName="email"
+            />
+
+            <textarea
+                (keyup.enter)="sendMessage()"
+                #formMessage
+                [placeholder]="contact?.textPh"
+                formControlName="message"
+            ></textarea>
+            <button class="button self-start mt-2 z-50" (click)="sendMessage()">{{ contact?.button }}</button>
         </div>
-        <div class="flex flex-col contact-details">
+        <div class="flex flex-col contact-details bg-red">
             <p class="item-title text-2xl font-bold">{{ contact?.contactData }}</p>
             <p>Email:</p>
             <p>jakub.pruszydlo&commat;gmail.com</p>

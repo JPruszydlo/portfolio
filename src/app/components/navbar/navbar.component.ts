@@ -27,7 +27,7 @@ export type ButtonConfig = {
 })
 export class NavbarComponent implements OnInit {
     @Input() pageItems: HTMLSpanElement[] = []
-
+    downloadButtonText: string = ''
     @ViewChild('navbar') navElement: ElementRef
     @ViewChild('navItems') navItems: ElementRef
     @ViewChild('menuOpen') menuOpen: ElementRef
@@ -56,6 +56,7 @@ export class NavbarComponent implements OnInit {
                     if (buttonConfig == undefined) continue
                     buttonConfig.name = result[key]
                 }
+                this.downloadButtonText = result['downloadButton']
             },
         })
     }

@@ -1,10 +1,11 @@
-{
+{   
     "navbar": {
         "home": "Home",
         "resume": "Resume",
         "about": "About",
         "portfolio": "Portfolio",
-        "contact": "Contact"
+        "contact": "Contact",
+        "downloadButton": "Download CV"
     },
     "banner": {
         "hello": "Hello! I\"m <span class=\"red-bold\">JAKUB PRUSZYDŁO</span>",
@@ -17,25 +18,25 @@
             "date": "10/2013 - 02/2017",
             "university": "Silesian University of Technology | Gliwice",
             "degree": "Engineering degree : Programming of mobile applications",
-            "description": "Full-time studies in Computer Science"
+            "description": "Full-time studies in the field of: computer science"
         },
         "experience": [
             {
                 "date": "03/2020 - 07/2024",
                 "position": "Software Engineer",
                 "name": "ALSTOM | Katowice",
-                "description": " - Creating and maintenance of internal testing tools for railway projects using Python, SQL, Docker, Django | .Net Framework, WinForms<br /> - Code maintenance with GIT CI/CD whit black formatting, pylint tests, unittesting<br /> - Participating in SCRUM team"
+                "description": " - Creating and maintenance of internal testing tools for railway projects using Python, MySQL, Docker, Django<br /> - Maintaining testing tools created in .Net Framework - WinForms, converting files from railml to excel format<br /> - Code maintenance with GIT CI/CD with black formatting, pylint tests, unittesting<br /> - Little experience in configuring linux server<br /> - Participating in SCRUM team"
             }, {
                 "date": "04/2016 - 02/2020",
                 "position": "Software Engineer",
                 "name": "NCR Corporation | Katowice",
-                "description": "- Creating features, maintaining ATM applications in .Net Framework, Visual Studio<br />- Creating basic ATM app frontend with HTML, CSS, JavaScript"
+                "description": "- Creating features, maintaining ATM applications in .Net Framework, Visual Studio<br />- Creating basic ATM app frontend with HTML, CSS, JavaScript<br />- Solving application problems with ATM machines working in production<br />- Support in starting ATMs in production environment"
             }
         ]
     },
     "about": {
         "title": "About <span class=\"red-bold\">Me</span>",
-        "about": "I am a programmer with over 8 years of experience, specializing in C# and Python. My career began with developing ATM applications, where I gained a solid foundation in .Net and frontend technologies such as JavaScript, HTML, and CSS. In the following years, I decided to focus on Python and microservices architecture. Recently, I have been enhancing my skills by working on personal projects using Angular, ASP.Net Core, and MySQL. I thrive in both team and individual work environments. I am open to acquiring new skills and continuously improving my competencies.",
+        "about": "I am a programmer with over 8 years of experience, specializing in C# and Python. My career began with developing ATM applications, where I gained a solid foundation in .Net and frontend technologies such as JavaScript, HTML, and CSS. In the following years, I decided to focus on Python and microservices architecture. Recently, I have been enhancing my skills by working on personal projects using Angular, ASP.Net Core, and MySQL. I feels great in teamwork as well as individual work. I am open to acquiring new skills and continuously improving my competencies.",
         "skillsTitle": "My skills",
         "skills": [
             ".Net",

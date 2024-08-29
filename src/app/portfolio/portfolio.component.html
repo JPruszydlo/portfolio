@@ -1,7 +1,7 @@
 <div class="panel">
     <p class="panel-title mb-5">{{ portfolio?.title }}</p>
-    <div class="items-grid grid mx-auto">
-        <div style="width: min(450px, 100%)" class="mx-auto" *ngFor="let item of portfolio?.items">
+    <div class="items-grid grid mx-auto" style="width: min(1200px, 98%)">
+        <div style="width: 100%" class="mx-auto" *ngFor="let item of portfolio?.items">
             <app-carousel
                 [images]="item.images"
                 (onClick)="accordion.activeIndex = accordion.activeIndex == -1 ? 0 : -1"

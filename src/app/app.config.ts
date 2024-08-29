@@ -4,11 +4,12 @@ import { routes } from './app.routes'
 import { provideHttpClient } from '@angular/common/http'
 import { TranslocoHttpLoader } from './transloco-loader'
 import { provideTransloco } from '@jsverse/transloco'
-import { PrimeNGConfig } from 'primeng/api'
+import { MessageService, PrimeNGConfig } from 'primeng/api'
 import { provideAnimations } from '@angular/platform-browser/animations'
 
 export const appConfig: ApplicationConfig = {
     providers: [
+        MessageService,
         provideAnimations(),
         provideZoneChangeDetection({ eventCoalescing: true }),
         provideRouter(routes),

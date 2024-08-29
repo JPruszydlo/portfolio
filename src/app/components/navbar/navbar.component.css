@@ -1,13 +1,18 @@
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 965px) {
   .menu-button {
     display: none;
   }
   .nav-items {
     @apply absolute h-full top-0 left-1/2 -translate-x-1/2 flex flex-row gap-4 font-semibold text-2xl
   }
-  
+  .flag-items {
+    @apply right-10
+  }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 965px) {
+  .flag-items {
+    @apply right-6
+  }
   .nav-items {
     @apply relative pt-14 w-1/2 text-2xl grid grid-rows-5 z-40;
     height: 60vh;

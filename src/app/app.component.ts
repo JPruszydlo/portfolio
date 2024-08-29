@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component'
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ContactComponent } from './contact/contact.component'
 import { LanguageService } from './language.service'
+import { ToastModule } from 'primeng/toast'
 
 @Component({
     selector: 'app-root',
@@ -20,6 +21,7 @@ import { LanguageService } from './language.service'
         AboutComponent,
         PortfolioComponent,
         ContactComponent,
+        ToastModule,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
@@ -31,7 +33,7 @@ export class AppComponent implements OnInit {
     constructor(private primengConfig: PrimeNGConfig, private lang: LanguageService) {}
 
     ngOnInit(): void {
-        this.lang.setLang('pl')
+        this.lang.setLang('en')
         this.primengConfig.ripple = true
     }
 }

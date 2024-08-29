@@ -1,14 +1,16 @@
 {
+    "downloadButton": "Pobierz CV",
     "navbar": {
         "home": "Home",
         "resume": "CV",
         "about": "O mnie",
         "portfolio": "Portfolio",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "downloadButton": "Pobierz CV"
     },
     "banner": {
         "hello": "Dzień dobry! Nazywam się <span class=\"red-bold\">JAKUB PRUSZYDŁO</span>",
-        "resume": "Poniżej znajdziesz moje <span class=\"red-bold\">CV</span>"
+        "resume": "Poniżej znajdziesz moje <span class=\"red-bold\">PORTFOLIO</span>"
     },
     "cv": {
         "educationTitle": "Edukacja",
