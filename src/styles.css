@@ -98,3 +98,17 @@ html, body {
     0%   {color: red;}
     100% {color: #cecece;}
   }
+
+.links {
+    @apply grid w-full items-center;
+    grid-template-columns: 25% 25% 50%;
+}
+.links img {
+    @apply w-2/3 m-auto 
+}
+.links > p:last-of-type img {
+    @apply relative w-2/3 top-1/2 -translate-y-1/2 
+}
+.links > p {
+  @apply w-full h-full
+}

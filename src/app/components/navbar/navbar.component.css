@@ -1,4 +1,8 @@
 @media screen and (min-width: 965px) {
+  .links {
+    @apply  hidden 
+  }
+  
   .menu-button {
     display: none;
   }
@@ -10,6 +14,9 @@
   }
 }
 @media screen and (max-width: 965px) {
+  .header-links {
+    @apply hidden
+  }
   .flag-items {
     @apply right-6
   }
@@ -21,7 +28,7 @@
   .nav-items > button:first-of-type {
     @apply border-t-2
   }
-  .nav-items > button {
+  .nav-items > * {
     @apply bg-neutral-600 border-b-2 border-neutral-500
   }
   .nav-items button > hr {

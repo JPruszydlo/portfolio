@@ -3,6 +3,7 @@
         <i #menuOpen class="menu-button-visible pi pi-bars text-white text-4xl relative left-0 z-30"></i>
         <i #menuClose class="menu-button-hidden pi pi-times text-white text-4xl absolute left-0 z-10"></i>
     </button>
+
     <div #navItems class="nav-items -left-1/2">
         <button
             #navButton
@@ -21,12 +22,28 @@
                 style="border: 1px solid red"
             ></p>
         </button>
+        <div class="links py-2">
+            <p>
+                <a href="https://www.facebook.com/jak.pru" target="_blank">
+                    <img src="../../assets/facebook.svg" />
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/JPruszydlo" target="_blank">
+                    <img src="../../assets/github.png" />
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/jakub-pruszydlo/" target="_blank">
+                    <img src="../../assets/linkedin.png" />
+                </a>
+            </p>
+        </div>
     </div>
     <div class="absolute h-full top-0 flex flex-row flag-items">
         <a href="../../../assets/jakub_pruszydlo_cv.pdf" class="self-center" target="_blank"
             ><div class="button h-fit text-lg self-center">{{ downloadButtonText }}</div></a
         >
-
         <button (click)="setLanguage('pl')"><span class="fi fi-pl text-3xl mx-4"></span></button>
         <button (click)="setLanguage('en')"><span class="fi fi-gb text-3xl"></span></button>
     </div>

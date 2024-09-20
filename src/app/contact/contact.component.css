@@ -43,12 +43,3 @@
 .contact-form input::placeholder {
     color: #848484;
 }
-.contact-details i {
-    @apply text-5xl
-}
-.contact-details .pi-facebook {
-    color: #0866ff;
-}
-.contact-details .pi-linkedin {
-    color: #0a66c2;
-}

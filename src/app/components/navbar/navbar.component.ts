@@ -12,6 +12,7 @@ import {
     ViewChild,
 } from '@angular/core'
 import { LanguageService } from '../../language.service'
+import { __addDisposableResource } from 'tslib'
 
 export type ButtonConfig = {
     name: string
@@ -60,7 +61,6 @@ export class NavbarComponent implements OnInit {
             },
         })
     }
-
     toggleMenu() {
         if (this.menuOpen.nativeElement.classList.contains('menu-button-visible')) {
             this.menuOpen.nativeElement.classList.replace('menu-button-visible', 'menu-button-hidden')

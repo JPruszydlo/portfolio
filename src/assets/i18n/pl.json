@@ -43,6 +43,7 @@
             ".Net",
             "ASP.Net Core",
             ".Net Framework",
+            "Entity Framework Core",
             "C#",
             "Angular 18",
             "JavaScript",
@@ -87,6 +88,13 @@
                 ],
                 "description":
                     "W ramach dalszej współpracy z firmą GK-System stworzyłem system CMS, który umożliwia łatwe zarządzanie treścią na stronie internetowej. Dzięki zastosowaniu ASP.Net Core oraz Entity Framework Core, system ten jest nie tylko wydajny, ale również łatwy do rozbudowy. MySQL pełni rolę bazy danych, zapewniając stabilne przechowywanie i szybki dostęp do informacji. Frontend zrealizowany w Angularze, z komunikacją opartą na RestApi i zapytaniach HTTP, umożliwia intuicyjne zarządzanie zawartością strony. Projekt ten umożliwił firmie GK-System samodzielne aktualizowanie treści, a mnie pozwolił na dalsze doskonalenie umiejętności w zakresie tworzenia złożonych aplikacji webowych."
+            },
+            {
+                "name": "Web Scrapper",
+                "link": "https://www.findcar.myshrot.pl",
+                "images": ["realisations/scrapper/1.png", "realisations/scrapper/2.png", "realisations/scrapper/3.png"],
+                "description":
+                    "Stworzyłem aplikację internetową, która umożliwia użytkownikom przeglądanie modeli samochodów wraz z ich cenami i zdjęciami. Projekt został zrealizowany z wykorzystaniem ASP.NET Core 6 jako backend oraz Angular 18 do obsługi interfejsu użytkownika. Dane dotyczące samochodów, w tym modele i ceny, są przechowywane w bazie danych MySQL, a narzędzie HtmlAgilityPack służy do ekstrakcji danych z zewnętrznych źródeł. Aplikacja zapewnia intuicyjny interfejs oraz wydajny system przetwarzania i wyświetlania informacji motoryzacyjnych."
             }
         ]
     },
